@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coffee Connect Login</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <style>
+            .login-form {
+                font-family: 'Roboto';
+                width: 350px;
+                padding: 1em;
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
+            }
+            .login-form h1 {
+                text-align: center;
+                color: #A25740;
+                font-size: 43px;
+            }
+            .login-form input[type="password"],
+            .login-form input[type="text"] {
+                width: 100%;
+                padding: 15px;
+                border: 3px solid #dddddd;
+                margin-bottom: 15px;
+                box-sizing:border-box;
+            }
+            .login-form input[type="submit"],
+            .login-form input[type="button"]{
+                width: 48%;
+                padding: 15px;
+                background-color: #535b63;
+                border: 0;
+                box-sizing: border-box;
+                cursor: pointer;
+                font-weight: bold;
+                color: #ffffff;
+                margin: 0px 2.5px
+            }
+            .login-form input[type="submit"]:hover {
+                opacity: 0.8;
+            }
+            .regColor {
+                color: black
+            }
+            .backgroundSet {
+                background: black
+            }
+        </style>
+    </head>
+    <body style="background-color:#FBF3DF">
+        <div class="login-form">
+            <h1><b>Coffee</b> <span class = "regColor">Connect</span></h1>
+            <form action="auth" method="POST">
+                <input type="text" name="username" placeholder="Enter Username" required>
+                <input type="password" name="password" placeholder="Enter Password" required>
+                <a href = "/register"><input type="button" value="Register"></a>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </body>
+</html>

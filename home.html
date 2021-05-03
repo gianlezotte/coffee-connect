@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coffee Shops Feed</title>
+	<link href="css/home.css" rel="stylesheet" type = "text/css">
+    <link rel="shortcut icon" type="image/png" href="pictures/logo.png"/>
+</head>
+<body>
+    <div>
+        <!-- Title of Page -->
+        <header>
+            <div class = "container">
+                <h1>Coffee near you</h1>
+                <form>
+                    <style> 
+                        input[type=text] {
+                          width: 25%;
+                          padding: 14px 20px;
+                          margin: -7.5vh 35vw;
+                          box-sizing: border-box;
+                          border: none;
+                          background-color: #3B271D;
+                          color: #EFE0BB;
+                          font-size: 22px;
+                          border-radius: 25px 25px 25px 25px;
+                          display: flex;
+                          margin-bottom: 0vh;
+                          outline:#EFE0BB;
+                        }
+                        ::placeholder {
+                            color: #EFE0BB;
+                            opacity: 0.5;
+                        }
+                        </style>
+                    <input type= "text" id = "zipcode" placeholder="Enter Zipcode">
+                </form>
+                <button class = "submitbutton" id="submitbutton" type="button" onclick="myFunction()">Search</button>
+            </div>
+            <div id = weather-forecast>
+                <div class = weather>
+                    <h2>Enter your zipcode</h2>
+                    <h2>to view results</h2>
+                </div>
+            </div>
+            <div class="dropdown" style="float:right; padding-right: 3vw; margin-top: -23.1vh;">
+                <img src="pictures/profile.png" class="profileLogo">
+                <div class="dropdown-content">
+                  <a href="profile">Profile</a>
+                  <a href="welcome">Sign Out</a>
+                </div>
+              </div>
+                </header>
+        
+        <!-- Profile logo -->
+        <!-- <div class="dropdown" style="float:right; padding-right: 3vw; margin-top: -16.6vh;">
+            <img src="pictures/profile.png" class="profileLogo">
+            <div class="dropdown-content">
+              <a href="profile.html">Profile</a>
+              <a href="welcome.html">Sign Out</a>
+            </div>
+          </div> -->
+
+        <!-- Navigation bar -->
+        <div class="navbar">
+            <div>
+                <img src= "pictures/logo.png" class="logo">
+            </div>
+		    <div class = "explore">
+                <a href="home" style= "text-decoration: none; color: #C7934E;">explore</a>
+            </div>
+            <div class = "friends">
+                <a href="friendsfeed" style= "text-decoration: none; color: #EFE0BB;">friends</a>
+            </div>
+        </div>
+
+        <div id = "Coffee-Shop-Cards">
+            
+        </div>
+        <!-- CARD NUMBER ONE -->
+        <!-- <div class = "container">
+            <div class = "post">
+                <div>
+                    <img src = "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg">
+                </div>
+                <div>
+                    <h2>Roast Coffee</h2>
+                    <span>0.2 miles away</span>
+                </div>
+                <div>
+                    <p>Roast is an authentic coffee shop that offers a wide variety of flavors from all over the world. Roast is an authentic coffee shop that offers a wide variety of flavors from all over the world.</p>
+                </div>
+                <button type="button" class="collapsible">Read more...</button>
+                <div class="content">
+                    <p>Address: 1037 University Dr Suite 109, College Station, TX 77840</p>
+                    <p>Categories: Coffee, Food, Pastries</p>
+                    <p>Website: www.starbucks.com</p>
+                </div>
+            </div>
+        </div> -->
+        <!-- <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script> -->
+        <!-- CARD NUMBER TWO -->
+        <!-- <div class = "container">
+            <div class = "post">
+                <div>
+                    <a href = "shop.html">
+                        <img src = "pictures/coffee2.jpg">
+                    </a>
+                </div>
+                <div>
+                    <h2>Carport</h2>
+                    <span>0.8 miles away</span>
+                </div>
+                <div>
+                    <p>Carport is an authentic coffee shop that offers a wide variety of flavors from all over the world.</p>
+                </div>
+            </div>
+        </div> -->
+        <!-- CARD NUMBER Three -->
+        <!-- <div class = "container">
+            <div class = "post">
+                <div>
+                    <a href = "shop.html">
+                        <img src = "pictures/coffee3.png">
+                    </a>
+                </div>
+                <div>
+                    <h2>Harvest</h2>
+                    <span>1.6 miles away</span>
+                </div>
+                <div>
+                    <p>Harvest is an authentic coffee shop that offers a wide variety of flavors from all over the world.</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <script src="js/homefeed.js"></script>
+    <!-- <script src="weatherapis.js"></script> -->
+    <!-- <script src="zipcodetest.js"></script> -->
+</body>
+</html>
