@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coffee Shops Feed</title>
+        <link href="css/friendsfeed.css" rel="stylesheet" type = "text/css">
+
+    </head>
+    <body>
+        <div>
+            <!-- Title of Page -->
+            <header>
+                <div class = "container">
+                    <h1>Friends Feed</h1>
+                </div>
+            </header>
+
+            <!-- Profile logo -->
+            <div class="dropdown" style="float:right; padding-right: 3vw; margin-top: -8vh;">
+                <img src="pictures/profile.png" class="profileLogo">
+                <div class="dropdown-content">
+                    <a href="profile">Profile</a>
+                    <a href="welcome">Sign Out</a>
+                </div>
+            </div>
+
+            <!-- Navigation bar -->
+            <div class="navbar">
+                <div>
+                    <img src= "pictures/logo.png" class="logo">
+                </div>
+                <div class = "explore">
+                    <a href="home" style= "text-decoration: none; color: #EFE0BB;">explore</a>
+                </div>
+                <div class = "friends">
+                    <a href="friendsfeed" style= "text-decoration: none; color: #C7934E;">friends</a>
+                </div>
+            </div>
+            <!--Create post Button-->
+            <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
+            <div class = "post-creation">
+                <img src="pictures/post-creation-icon.png" onclick="openForm()">
+            </div>
+
+            <div class="form-popup" id="myForm">
+                <form action="postcontent" method="POST" class="form-container">
+                    <h1>Post Creation</h1>
+
+                    <!-- <label for="email"><b>Visibility: All friends</b></label> -->
+                    <input type="text" name = "postContent" placeholder="Write here..." required>
+
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                </form>
+            </div>
+
+            <script>
+                function openForm() {
+                    document.getElementById("myForm").style.display = "block";
+                }
+
+                function closeForm() {
+                    document.getElementById("myForm").style.display = "none";
+                }
+            </script>
+
+            <% for(var i=0; i<1; i++) {
+                userData.forEach(function(data){%>
+            <div class = "container">
+                <div class = "post">
+
+                    <div>
+                        <a href = "profile.html" style = "text-decoration: none;">
+                            <h2><%=data.username%></h2>
+                        </a>
+                        <span><%=data.postdate%></span>
+                    </div>
+                    <div>
+                        <p><%=data.post%></p>
+
+                    </div>
+                </div>
+            </div>
+            <% }) } %>
+
+        </div>
+    </body>
+</html>

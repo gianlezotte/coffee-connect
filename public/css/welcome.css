@@ -1,0 +1,135 @@
+
+html, body {
+    min-height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url("background.png");
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, ul, ol {
+    margin: 0;
+}
+
+#coffee-connect {
+    position: absolute;
+    width: 27%;
+    height: 9%;
+    left: 17%;
+    top: 4%;
+
+    font-size: 70px;
+}
+#coffee {
+    color:#A05E2B;
+}
+
+#login {
+    position: absolute;
+    width: 83px;
+    height: 35px;
+    left: 78%;
+    top: 7%;
+    text-decoration: none;
+    color: #3B271D;
+    font-size: 25px;
+}
+
+#signup {
+    position: absolute;
+    width: 7%;
+    height: 5%;
+    left: 85%;
+    top: 8%;
+
+    background: #3B271D;
+    border-radius: 40px;
+    border: none;
+
+    font-family: Roboto;
+    font-size: 24px;
+    color: #EFE0BB;
+}
+#signup:hover {
+    -o-transition:.2s; /* opera > 12.1 */
+    -ms-transition:.2s; /* internet explorer */
+    -moz-transition:.2s; /* firefox < 16 */
+    -webkit-transition:.2s; /* safari, chrome, and opera > 12.1 */
+    transition:.2s;
+
+    cursor: pointer;
+    outline: none;
+    color: #C7934E;
+  
+}
+#signup:focus {
+    outline: none;
+}
+
+#main-text {
+    position: absolute;
+    width: 31%;
+    height: 43%;
+    left: 333px;
+    top: 243px;
+
+    font-size: 25px;
+}
+#main-title {
+    font-size: 80px;
+}
+
+/* START OF SLIDING ANIMATION */
+div.slide-right {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-right p {
+  animation: 2.5s slide-right;
+  line-height: 30px;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -50%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+div.slide-right-delay {
+    width:100%;
+    overflow:hidden;
+    animation-delay: 1s;
+  }
+  div.slide-right-delay p {
+    animation: 3s slide-right;
+    line-height: 30px;
+  }
+  
+  @keyframes slide-right {
+    from {
+      margin-left: -50%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/* END OF SLIDING ANIMATION */
+
+div.description{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 2vw;
+    top: 22vh;
+
+    font-size: 25px;
+}

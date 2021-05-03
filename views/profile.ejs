@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Profile</title>
+        <link rel="shortcut icon" type="image/png" href="pictures/logo.png"/> <!--not working?-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar">
+            <div>
+                <img src= "pictures/logo.png" class="logo">
+            </div>
+            <div class = "explore">
+                <a href="home" style= "text-decoration: none; color: #EFE0BB;">explore</a>
+            </div>
+            <div class = "friends">
+                <a href="friendsfeed" style= "text-decoration: none; color: #EFE0BB;">friends</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="pictures/profilePhoto.jpg" alt="John" style="width:100%">
+            <h1>Hello <%= user%></h1>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="dropdown" style="float:right; padding-right: 3vw; margin-top: -84vh;">
+            <img src="pictures/profile.png" class="profileLogo">
+            <div class="dropdown-content">
+                <a href="profile">Profile</a>
+                <a href="/welcome">Sign Out</a>
+            </div>
+        </div>
+    </body>
